@@ -16,8 +16,16 @@
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script type="text/babel">
-      const root = document.getElementById("root");
-      ReactDOM.render(<h1>Titulo</h1>, root)
+      
+      function MeuComponent(props){
+        return (
+          <div>
+            <h1>Olá {props.nome}</h1>
+          </div>
+        )
+      }
+
+      ReactDOM.render(<MeuComponent nome="Segattinho"/>, root);
     </script>
   </body>
 </html>
